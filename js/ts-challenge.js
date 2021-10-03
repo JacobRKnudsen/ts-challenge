@@ -1,5 +1,11 @@
 "use strict";
 exports.__esModule = true;
 var Triangle_1 = require("./Triangle");
-var triangle = new Triangle_1.Triangle(1, 2, 2);
-console.log(triangle.checkTriangle());
+var isocelesTriangle = new Triangle_1.Triangle(1, 2, 2);
+var scaleneTriangle = new Triangle_1.Triangle(4, 2, 3);
+var equilateralTriangle = new Triangle_1.Triangle(1, 1, 1);
+var invalidTriangle = new Triangle_1.Triangle(0, 1, 1);
+console.log(isocelesTriangle.checkTriangle());
+console.log(scaleneTriangle.checkTriangle());
+console.log(equilateralTriangle.checkTriangle());
+console.log(invalidTriangle.checkTriangle());
